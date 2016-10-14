@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'FontAwesome';
-  src: url('/css/fonts/fontawesome-webfont.eot?v=4.5.0');
-  src: url('/css/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format("embedded-opentype"), url('/css/fonts/fontawesome-webfont.woff2?v=4.5.0') format("woff2"), url('/css/fonts/fontawesome-webfont.woff?v=4.5.0') format("woff"), url('/css/fonts/fontawesome-webfont.ttf?v=4.5.0') format("truetype"), url('/css/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format("svg");
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format("embedded-opentype"), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format("woff2"), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format("woff"), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format("truetype"), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4890,7 +4890,7 @@ h6 {
 
 .divider {
   margin: 50px 12px;
-  background-image: url(/images/dotted-line.png);
+  background-image: url(../img/dotted-line.png);
   background-position: 0 0;
   height: 5px;
   overflow: hidden;
@@ -5163,7 +5163,7 @@ fieldset[disabled] .button {
 }
 
 .section.bg-404 {
-  background-image: url(/images/404.png);
+  background-image: url(../img/404.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -5837,7 +5837,7 @@ h3 {
       position: absolute;
       top: 50%;
       margin-top: 4px;
-      background-image: url(/images/dotted-line.png);
+      background-image: url(../img/dotted-line.png);
       background-position: 0 0;
       width: 300%;
       height: 5px;
@@ -5850,7 +5850,7 @@ h3 {
       position: absolute;
       top: 50%;
       margin-top: 4px;
-      background-image: url(/images/dotted-line.png);
+      background-image: url(../img/dotted-line.png);
       background-position: 0 0;
       width: 300%;
       height: 5px;
@@ -5863,7 +5863,7 @@ h3 {
       position: absolute;
       top: 50%;
       margin-top: 4px;
-      background-image: url(/images/dotted-line.png);
+      background-image: url(../img/dotted-line.png);
       background-position: 0 0;
       width: 300%;
       height: 5px;
@@ -5900,7 +5900,7 @@ h3 {
     top: 50%;
     margin-top: -3px;
     margin-left: 12px;
-    background-image: url(/images/dotted-line.png);
+    background-image: url(../img/dotted-line.png);
     background-position: 0 0;
     width: 300%;
     height: 5px;
@@ -6743,106 +6743,106 @@ article.entry:hover .entry-date {
 }
 
 .parallax-bg-1 .full-bg-image, .parallax-bg-2 .full-bg-image {
-  background-image: url(/images/big_interior_1.jpg);
+  background-image: url(../img/big_interior_1.jpg);
 }
 
 .parallax-bg-3 .full-bg-image {
-  background-image: url(/images/big_interior_4.jpg);
+  background-image: url(../img/big_interior_4.jpg);
 }
 
 .parallax-bg-5 .full-bg-image {
-  background-image: url(/images/bg-9.jpg);
+  background-image: url(../img/bg-9.jpg);
 }
 
 .parallax-bg-6 .full-bg-image {
-  background-image: url(/images/city4.jpg);
+  background-image: url(../img/city4.jpg);
 }
 
 .parallax-bg-7 .full-bg-image {
-  background-image: url(/images/bg-7.jpg);
+  background-image: url(../img/bg-7.jpg);
 }
 
 .parallax-bg-8 .full-bg-image {
-  background-image: url(/images/bg-8.jpg);
+  background-image: url(../img/bg-8.jpg);
   opacity: 0.4;
 }
 
 .parallax-bg-13 .full-bg-image {
-  background-image: url(/images/bg-13.jpg);
+  background-image: url(../img/bg-13.jpg);
 }
 
 .parallax-bg-14 .full-bg-image {
-  background-image: url(/images/bg-14.jpg);
+  background-image: url(../img/bg-14.jpg);
 }
 
 .parallax-bg-15 .full-bg-image {
-  background-image: url(/images/bg-15.jpg);
+  background-image: url(../img/bg-15.jpg);
 }
 
 .parallax-bg-16 .full-bg-image {
-  background-image: url(/images/bg-16.jpg);
+  background-image: url(../img/bg-16.jpg);
 }
 
 .parallax-bg-17 .full-bg-image {
-  background-image: url(/images/bg-17.jpg);
+  background-image: url(../img/bg-17.jpg);
 }
 
 .parallax-bg-18 .full-bg-image {
-  background-image: url(/images/bg-18.jpg);
+  background-image: url(../img/bg-18.jpg);
 }
 
 .parallax-bg-19 .full-bg-image {
-  background-image: url(/images/bg-19.jpg);
+  background-image: url(../img/bg-19.jpg);
 }
 
 .parallax-bg-20 .full-bg-image {
-  background-image: url(/images/bg-20.jpg);
+  background-image: url(../img/bg-20.jpg);
   opacity: 0.6;
 }
 
 .parallax-bg-21 .full-bg-image {
-  background-image: url(/images/bg-21.jpg);
+  background-image: url(../img/bg-21.jpg);
   opacity: 0.6;
 }
 
 .parallax-bg-22 .full-bg-image {
-  background-image: url(/images/bg-22.jpg);
+  background-image: url(../img/bg-22.jpg);
   opacity: 0.6;
 }
 
 .parallax-bg-23 .full-bg-image {
-  background-image: url(/images/bg-23.jpg);
+  background-image: url(../img/bg-23.jpg);
   opacity: 0.55;
 }
 
 .parallax-bg-24 .full-bg-image {
-  background-image: url(/images/bg-24.jpg);
+  background-image: url(../img/bg-24.jpg);
   opacity: 0.75;
 }
 
 .parallax-bg-25 .full-bg-image {
-  background-image: url(/images/bg-25.jpg);
+  background-image: url(../img/bg-25.jpg);
   opacity: 0.75;
 }
 
 .parallax-bg-26 .full-bg-image {
-  background-image: url(/images/bg-26.jpg);
+  background-image: url(../img/bg-26.jpg);
   opacity: 0.85;
 }
 
 .parallax-bg-27 .full-bg-image {
-  background-image: url(/images/bg-27.jpg);
+  background-image: url(../img/bg-27.jpg);
   opacity: 1;
 }
 
 .parallax-bg-28 .full-bg-image {
-  background-image: url(/images/bg-28.jpg);
+  background-image: url(../img/bg-28.jpg);
   opacity: 0.75;
   background-position: 0 70%;
 }
 
 .parallax-bg-faq .full-bg-image {
-  background-image: url(/images/bg-faq.jpg);
+  background-image: url(../img/bg-faq.jpg);
   opacity: 0.7;
 }
 
@@ -6850,7 +6850,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-30.jpg);
+    background-image: url(../img/bg-30.jpg);
     opacity: 0.85;
     background-position: 0 50%;
   }
@@ -6860,7 +6860,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-28.jpg);
+    background-image: url(../img/bg-28.jpg);
     opacity: 0.85;
     background-position: 0 50%;
   }
@@ -6870,7 +6870,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-25.jpg);
+    background-image: url(../img/bg-25.jpg);
     opacity: 0.85;
     background-position: 0 50%;
   }
@@ -6880,7 +6880,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-27.jpg);
+    background-image: url(../img/bg-27.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6890,7 +6890,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-34.jpg);
+    background-image: url(../img/bg-34.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6900,7 +6900,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-41.jpg);
+    background-image: url(../img/bg-41.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6910,7 +6910,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-61.jpg);
+    background-image: url(../img/bg-61.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6920,7 +6920,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-62.jpg);
+    background-image: url(../img/bg-62.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6930,7 +6930,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-63.jpg);
+    background-image: url(../img/bg-63.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6940,7 +6940,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-65.jpg);
+    background-image: url(../img/bg-65.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6950,7 +6950,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-67.jpg);
+    background-image: url(../img/bg-67.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6960,7 +6960,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-68.jpg);
+    background-image: url(../img/bg-68.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6970,7 +6970,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-69.jpg);
+    background-image: url(../img/bg-69.jpg);
     opacity: 0.65;
     background-position: 0 0;
   }
@@ -6980,7 +6980,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-71.jpg);
+    background-image: url(../img/bg-71.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -6990,7 +6990,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-79.jpg);
+    background-image: url(../img/bg-79.jpg);
     opacity: 0.75;
     background-position: 0 0;
   }
@@ -7000,7 +7000,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-81.jpg);
+    background-image: url(../img/bg-81.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7010,7 +7010,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-82.jpg);
+    background-image: url(../img/bg-82.jpg);
     opacity: 0.90;
     background-position: 0 0;
   }
@@ -7020,7 +7020,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-81.jpg);
+    background-image: url(../img/bg-81.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7030,7 +7030,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-124.jpg);
+    background-image: url(../img/bg-124.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7040,7 +7040,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-125.jpg);
+    background-image: url(../img/bg-125.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7050,7 +7050,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-126.jpg);
+    background-image: url(../img/bg-126.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7060,7 +7060,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-127.jpg);
+    background-image: url(../img/bg-127.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7070,7 +7070,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-128.jpg);
+    background-image: url(../img/bg-128.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7080,7 +7080,7 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-129.jpg);
+    background-image: url(../img/bg-129.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
@@ -7090,19 +7090,19 @@ article.entry:hover .entry-date {
   padding: 50px 0;
 
   .full-bg-image {
-    background-image: url(/images/bg-130.jpg);
+    background-image: url(../img/bg-130.jpg);
     opacity: 0.85;
     background-position: 0 0;
   }
 }
 
 .parallax-bg-k2 .full-bg-image {
-  background-image: url(/images/bg-k4.jpg);
+  background-image: url(../img/bg-k4.jpg);
   opacity: 0.55;
 }
 
 .parallax-bg-k .full-bg-image {
-  background-image: url(/images/bg-k.jpg);
+  background-image: url(../img/bg-k.jpg);
   background-position: 60% 10% !important;
   opacity: 0.75;
 }
@@ -7254,7 +7254,7 @@ article.entry:hover .entry-date {
 }
 
 #wrapper.wrapper-background {
-  background-image: url(/images/corporate-style-extended/bg-image.jpg);
+  background-image: url(../img/corporate-style-extended/bg-image.jpg);
 }
 
 .absolute-image {
@@ -7369,7 +7369,7 @@ i.ca-icon:before {
       top: 50%;
       margin-top: -3px;
       margin-left: 12px;
-      background-image: url(/images/dotted-line.png);
+      background-image: url(../img/dotted-line.png);
       background-repeat: repeat-x;
       background-position: 0 0;
       width: 300%;
@@ -7606,7 +7606,7 @@ i.ca-icon:before {
     top: 60%;
     margin-top: -3px;
     margin-left: 12px;
-    background-image: url(/images/dotted-line.png);
+    background-image: url(../img/dotted-line.png);
     background-position: 0 0;
     width: 300%;
     height: 5px;
@@ -8096,7 +8096,7 @@ ol {
   &:before {
     width: 35px;
     height: 25px;
-    background: url(/images/page/decor/icon-decor-sprite.png) no-repeat;
+    background: url(../img/page/decor/icon-decor-sprite.png) no-repeat;
   }
 
   &:nth-child(1):before {
@@ -9413,12 +9413,12 @@ div.full-width img {
   }
 
   .footer-social-instagram {
-    background: url(/images/instagram.png) no-repeat;
+    background: url(../img/instagram.png) no-repeat;
     width: 30px;
   }
 
   .footer-social-houzz {
-    background: url(/images/houzz.png) no-repeat;
+    background: url(../img/houzz.png) no-repeat;
     width: 90px;
     margin-right: 0;
   }
@@ -12585,3 +12585,18 @@ img.mfp-img {
     }
   }
 }
+.fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+
+        .fluid-width-video-wrapper iframe,
+        .fluid-width-video-wrapper object,
+        .fluid-width-video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
