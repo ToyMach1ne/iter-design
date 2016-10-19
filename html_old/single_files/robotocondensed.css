@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('http://64424.selcdn.ru/webfonts/robotocondensed/300.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url('http://64424.selcdn.ru/webfonts/robotocondensed/300i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/300i.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('http://64424.selcdn.ru/webfonts/robotocondensed/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url('http://64424.selcdn.ru/webfonts/robotocondensed/400i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/400i.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('http://64424.selcdn.ru/webfonts/robotocondensed/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url('http://64424.selcdn.ru/webfonts/robotocondensed/700i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/robotocondensed/700i.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
