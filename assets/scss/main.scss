@@ -5850,7 +5850,6 @@ fieldset[disabled] .button {
             padding: 0;
             list-style: none;
             transition: all 600ms linear;
-            .scrollto {
               li {
                 &:hover {
                   ul {
@@ -5869,7 +5868,6 @@ fieldset[disabled] .button {
                   }
                 }
               }
-            }
             .current-menu-item {
                   border-bottom: 1px solid red;
             }
