@@ -15,20 +15,16 @@
     <link rel="stylesheet" href="css/main.css">
     <div class="fit-vids-style" id="fit-vids-style" style="display: none;">
     </div>
-    <script src="js/approve.js" type="text/javascript" async=""></script>
-    <script src="js/get-settings.js" type="text/javascript" async=""></script>
-    <script type="text/javascript" async="" src="js/linkid.js"></script>
-    <script async="" src="js/module.js"></script>
-    <script async="" src="js/gtm.js"></script>
-    <script src="js/saved_resource(2).js"></script>
-    <script src="js/saved_resource(3).js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="js/bbf52dfe03b4ac69ef17.chunk.js."></script>
-    <script src="js/saved_resource(4).js"></script>
-    <script src="js/saved_resource(6).js"></script>
+<script src="js/approve.js" type="text/javascript"></script>
+<script src="js/saved_resource(2).js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
 </head>
 
 <body class="animated">
-    <script type="text/javascript" async="" src="js/cs.min.js."></script>
     <div id="wrapper">
         <div id="mobile-menu" class="mobile-menu">
             <a href="http://iter-design.com/#" id="menu-hide"></a>
@@ -69,7 +65,7 @@
         </div>
 
         <header id="header" role="banner">
-            <div id="ha-header" class="site-header affix-top" data-spy="affix" data-offset-top="50">
+            <div id="ha-header" class="site-header affix-top header" data-spy="affix" data-offset-top="50">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-4">
@@ -82,12 +78,23 @@
                                 <nav id="site-navigation" class="navigation main-navigation clearfix" role="navigation">
                                     <div class="menu-menu-top-container">
                                         <ul id="menu-menu-top" class="nav-menu">
-                                            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://rw-design.ru/services/">Услуги</a></li>
-                                            <li id="menu-item-6619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6619"><a href="http://rw-design.ru/new-portfolio/">Портфолио</a></li>
-                                            <li id="menu-item-8186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8186"><a href="http://rw-design.ru/stoimost/">Стоимость</a></li>
-                                            <li id="menu-item-4944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4944"><a href="http://rw-design.ru/help/">Заказать</a></li>
-                                            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://rw-design.ru/about/">О нас</a></li>
-                                            <li id="menu-item-6478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6478"><a href="http://rw-design.ru/contacts/">Контакты</a></li>
+                                            <div id="services" class="scrollto">
+                                                <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://rw-design.ru/services/">Услуги</a></li>
+                                            </div>
+                                            <div id="portfolio" class="scrollto">
+                                                <li id="menu-item-6619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6619"><a href="http://rw-design.ru/new-portfolio/">Портфолио</a></li></div>
+                                            <div id="price" class="scrollto">
+                                                <li id="menu-item-8186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8186"><a href="http://rw-design.ru/stoimost/">Стоимость</a></li>
+                                            </div>
+                                            <div id="order" class="scrollto">
+                                                <li id="menu-item-4944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4944"><a href="http://rw-design.ru/help/">Заказать</a></li>
+                                            </div>
+                                            <div id="about" class="scrollto">
+                                                <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://rw-design.ru/about/">О нас</a></li>
+                                            </div>
+                                            <div id="contacts" class="scrollto">
+                                                <li id="menu-item-6478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6478"><a href="http://rw-design.ru/contacts/">Контакты</a></li>
+                                            </div>
                                         </ul>
                                     </div>
                                 </nav>
@@ -110,79 +117,15 @@
                 </div>
             </div>
         </header>
-        <!-- <header id="header">
-            <div class="space"></div>
-            <div class="top-header-line">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-5 text-center text-left-md">
-                            <div class="contact-item contact-item-address"><a href="http://iter-design.com/contacts/"><i class="icon-location-2"></i>Москва, ул. Бауманская, д. 13, стр. 1 &amp; Пресненская наб., д. 8, стр. 1, "Город Столиц"</a></div>
-                        </div>
-                        <div class="col-xs-12 col-md-3 text-center text-left-md">
-                            <div class="contact-item contact-item-email"><i class="fa fa-envelope"></i>E-mail: <a href="mailto:info@iter-design.com">info@iter-design.com</a></div>
-                        </div>
-                        <div class="col-xs-12 col-md-4 text-center text-right-md">
-                            <div class="contact-item contact-item-phone" id="phone_top"><i class="fa fa-phone"></i> <span class="phone comagic">+7 (495) 104-48-38</span> <a href="http://iter-design.com/#call-back" class="contact-item-callback popup-with-form visible-lg-inline-block">Заказать звонок</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="middle-header-line">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-10">
-                            <div class="header-in">
-                                <div id="logo">
-                                    <a href="http://iter-design.com/"><img src="img/logo.png" alt="ITER-Design – Дизайн интерьера, Архитектура, Строительство и Полное управление проектом"></a>
-                                    <div class="logo-desc">
-                                        Проектно-строительная компания
-                                    </div>
-                                </div>
-                                <a id="responsive-nav-button" class="responsive-nav-button" href="http://iter-design.com/#"></a>
-                                <div class="nav-wrapper">
-                                    <nav id="navigation" class="navigation">
-                                        <ul>
-                                            <li>
-                                                <a href="http://iter-design.com/about/company/" title="Компания">Компания</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="http://iter-design.com/about/company/" title="О команде" target="">О команде</a></li>
-                                                    <li><a href="http://iter-design.com/about/press/" title="" target="">СМИ о нас    </a></li>
-                                                    <li><a href="http://iter-design.com/about/review/" title="Отзывы клиентов" target="">Отзывы клиентов</a></li>
-                                                    <li><a href="http://iter-design.com/faq/" title="Часто задаваемые вопросы" target="">Часто задаваемые вопросы</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="http://iter-design.com/complete_pm/" title="Услуги">Услуги</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="http://iter-design.com/complete_pm/" title="Комплексное управление проектом" target="">Комплексное управление проектом</a></li>
-                                                    <li><a href="http://iter-design.com/interior_design/" title="Дизайн интерьера" target="">Дизайн интерьера</a></li>
-                                                    <li><a href="http://iter-design.com/architecture/" title="Архитектура и дизайн фасадов" target="">Архитектура</a></li>
-                                                    <li><a href="http://iter-design.com/construction/" title="" target="">Строительство домов</a></li>
-                                                    <li><a href="http://iter-design.com/design-repair/" title="" target="">Дизайнерский ремонт</a></li>
-                                                    <li><a href="http://iter-design.com/decor/" title="Комплектация и декор" target="">Комплектация и декор</a></li>
-                                                    <li><a href="http://iter-design.com/engineering/" title="" target="">Инженерные системы</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="http://iter-design.com/portfolio/apartments/" title="Проекты">Портфолио</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="http://iter-design.com/portfolio/apartments/" title="Квартиры" target="">Квартиры</a></li>
-                                                    <li><a href="http://iter-design.com/portfolio/houses/" title="Загородные дома" target="">Загородные дома</a></li>
-                                                    <li><a href="http://iter-design.com/portfolio/public/" title="Коммерческие проекты" target="">Коммерческие проекты</a></li>
-                                                    <li><a href="http://iter-design.com/architecture/" title="Архитектура" target="">Архитектура</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="http://iter-design.com/diegest/" title="">DIGEST</a></li>
-                                            <li><a href="http://iter-design.com/contacts/" title="Контакты">Контакты</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header> -->
+
+        <!-- Owl Carousel -->
+        <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item"><img src="img/fullimage1.jpg" alt="The Last of us"></div>
+          <div class="item"><img src="img/fullimage2.jpg" alt="GTA V"></div>
+          <div class="item"><img src="img/fullimage3.jpg" alt="Mirror Edge"></div>
+        </div>
+            <!-- End Of Owl Carousel -->
+
         <div id="content-padding-off">
             <div class="content-container">
                 <section id="folio" class="section padding-top-off page">
@@ -648,19 +591,6 @@
     </div>
     <!--[if lt IE 9]><script src="/js/respond.min.js"></script><![endif]-->
     <a href="http://iter-design.com/#" id="back-top" title="Back To Top"></a>
-    <script type="text/javascript" id="">
-    (function(c, a, d, e, b) {
-        c.roistatProjectId = b;
-        c.roistatHost = e;
-        c = "https:" == a.location.protocol ? "https://" : "http://";
-        var f = /^.*roistat_visit=[^;]+(.*)?$/.test(a.cookie) ? "/dist/module.js" : "/api/site/1.0/" + b + "/init";
-        b = a.createElement(d);
-        b.async = 1;
-        b.src = c + e + f;
-        a = a.getElementsByTagName(d)[0];
-        a.parentNode.insertBefore(b, a)
-    })(window, document, "script", "cloud.roistat.com", "2aa4cedf295e40842a6ecee923a6f29a");
-    </script>
     <div id="comagic-cmp-0" class="comagic-common-form-panel comagic-component comagic-left comagic-top comagic-callbutton-site-phone" comagic-type="site_phone_form" style="display: none; z-index: 10002;">
         <div class="comagic-common-form-panel-tools">
             <a tabindex="0" unselectable="on" id="comagic-cmp-1" class="comagic-panel-tool-button comagic-panel-tool-button-close comagic-ms-button comagic-unselectable comagic-button comagic-button-icon comagic-button-icon-left comagic-component" comagic-type="tool-button-close"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span>&nbsp;</span></a>
@@ -800,6 +730,7 @@
             <div class="comagic-common-form-panel-footer"><a href="http://www.comagic.ru/?utm_medium=widget&amp;utm_campaign=link_widget" target="_blank">CoMagic.ru</a></div>
         </div>
     </div>
+
 </body>
 
 </html>
