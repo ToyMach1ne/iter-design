@@ -5850,6 +5850,26 @@ fieldset[disabled] .button {
             padding: 0;
             list-style: none;
             transition: all 600ms linear;
+            .scrollto {
+              li {
+                &:hover {
+                  ul {
+                    display: block !important;
+                    background: #fff;
+                    border-top: 1px solid grey;
+                    li {
+                      a {
+                        font-size: 13px;
+                        &:hover {
+                        background-color: black;
+                        color:#fff;
+                      }
+                      }
+                    }
+                  }
+                }
+              }
+            }
             .current-menu-item {
                   border-bottom: 1px solid red;
             }
@@ -6227,15 +6247,11 @@ fieldset[disabled] .button {
 
 .navigation {
   display: block;
-
   vertical-align: middle;
-
   border-bottom-width: 0;
   > ul > li {
     position: relative;
-
     display: inline-block;
-
     -webkit-transition: background-color .35s ease-out;
             transition: background-color .35s ease-out;
     &.current-menu-item-no > a {
@@ -6285,11 +6301,8 @@ fieldset[disabled] .button {
   ul {
     position: absolute;
     z-index: 999;
-
     display: none;
-
     width: 200px;
-
     -webkit-transition: color .35s ease;
             transition: color .35s ease;
 
@@ -6461,7 +6474,9 @@ fieldset[disabled] .button {
 #content {
   padding: 50px 0;
 }
-
+.portfolio-top {
+  padding-top: 110px !important;
+}
 #content-padding-off {
   padding: 0;
 }
@@ -9856,6 +9871,9 @@ div.full-width img {
     .architecture {
       width: 20%;
     }
+    .port-img {
+      width: 33%;
+    }
   }
   &.col-6 article {
     width: 16.666%;
@@ -9919,18 +9937,19 @@ div.full-width img {
   }
 }
 
-.work-item {
+  .work-item {
   position: relative;
   z-index: 3;
 
   overflow: hidden;
   img {
     display: block;
-
     -webkit-transition: -webkit-transform .25s ease-in-out, opacity .6s ease;
             transition:         transform .25s ease-in-out, opacity .6s ease;
   }
 }
+
+
 
 .rel-works .work-item img {
   padding: 0 1px;
@@ -14484,5 +14503,10 @@ img.mfp-img {
 
   .roistat-lh-submit-container {
     min-height: 50px !important;
+  }
+}
+.port-imagesize {
+  img {
+    height: 469px;
   }
 }
