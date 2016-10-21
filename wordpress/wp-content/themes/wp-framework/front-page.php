@@ -9,201 +9,33 @@
 
         <div id="content-padding-off">
             <div class="content-container">
+
+              <!-- Projects posts -->
                 <section id="folio" class="section padding-top-off page">
                     <section class="padding-bottom-off">
                         <section id="portfolio-items" class="portfolio-items col-5 back-black">
+                        <?php query_posts(array( 'post_type' => 'projects','showposts' => 15, 'order' => 'ASC' ) ); ?>
+                        <?php while (have_posts()) : the_post(); ?>
                             <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
                                 <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/zch_00.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/houses/zhelannye-cherty/">
+
+                                      <?php the_post_thumbnail('normal'); ?>
+                                      <a href="<?php the_permalink() ?>">
                                         <div class="image-extra">
                                             <div class="extra-content">
-                                                <h2 class="extra-title">Желанные черты</h2>
-                                                <h6 class="extra-descript">Загородный дом – 280 м<sup>2</sup></h6>
+                                                <h2 class="extra-title"><?php the_title(); ?></h2>
+                                                <h6 class="extra-descript"><?php echo get_the_excerpt(); ?></h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/houses/vechnye-tcennosti/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Вечные ценности</h2>
-                                                <h6 class="extra-descript">Загородный дом – 1500 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/cosmopolitan.jpg" alt="" style="left: -27.5397%; top: -1.76037%;">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/cosmopolitan/" style="display: none;">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">На стыке эпох</h2>
-                                                <h6 class="extra-descript">Квартира – 97 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview(1).jpg" alt="" style="left: -7.25897%; top: -7.67738%;">
-                                    <a href="http://iter-design.com/portfolio/project/arch/blokirovannyj-dvuhetazhnyj-zhiloj-dom/" style="display: none;">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Блокированный двухэтажный жилой дом</h2>
-                                                <h6 class="extra-descript">Архитектура – 1260 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/imperia.jpg" alt="" style="left: -0.0303994%; top: -22.5457%;">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/imperia_tower/" style="display: none;">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Вершина мира</h2>
-                                                <h6 class="extra-descript">Квартира – 109 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview(2).jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/4-solntca/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Поцелуй небес</h2>
-                                                <h6 class="extra-descript">Квартира – 180 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview(3).jpg" alt="" style="left: -21.0468%; top: -6.1602%;">
-                                    <a href="http://iter-design.com/portfolio/project/arch/ofisnyj-tcentr-v-odesse/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Офисный центр в Одессе</h2>
-                                                <h6 class="extra-descript">Архитектура – 1300 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all logos" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item lazy-image slideUp3xRun">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/cover.png">
-                                    <a href="http://iter-design.com/">
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/snfl_00.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/snow-flowers/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Snow &amp; flowers</h2>
-                                                <h6 class="extra-descript">Квартира – 105 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview(4).jpg" alt="" style="left: -15.4253%; top: -5.24989%;">
-                                    <a href="http://iter-design.com/portfolio/project/arch/dom-v-pavlovo/" style="display: none;">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Дом в Павлово</h2>
-                                                <h6 class="extra-descript">Архитектура – 350 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ak_00.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/houses/anglii-skii-kvartal/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Английский квартал</h2>
-                                                <h6 class="extra-descript">Загородный дом – 390 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/excellence.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/excellence/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Классическое превосходство</h2>
-                                                <h6 class="extra-descript">Квартира – 178 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ap_00.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/apartments/alye-parusa/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Яхтенный стиль</h2>
-                                                <h6 class="extra-descript">Квартира – 145 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/preview(5).jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/houses/aleksandrovskij/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Александровский</h2>
-                                                <h6 class="extra-descript">Загородный дом – 330 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/db_02.jpg" alt="">
-                                    <a href="http://iter-design.com/portfolio/project/houses/dom-v-barviha/">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title">Дом в Барвихе</h2>
-                                                <h6 class="extra-descript">Загородный дом – 550 м<sup>2</sup></h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                        </section>
+                            <?php endwhile;?>
+                        </section><!-- portfolio-items -->
                     </section>
-                </section>
+                </section><!-- folio -->
+                <!-- End Of Projects posts -->
+
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="section-title opacityRun">
@@ -211,24 +43,16 @@
                         </div>
                     </div>
                 </div>
+
                 <section class="section" style="padding-top: 12px;">
                     <div class="row padding-lr">
+
                         <div class="col-lg-4 col-sm-4">
                             <a href="http://iter-design.com/architecture/" class="main_block">
                                 <span>архитектурные проекты</span>
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="Архитектурные проекты"> </a>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/interior_design/" class="main_block">
-                                <span>дизайн интерьеров</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/2.jpg" alt="Дизайн интерьеров"> </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/engineering/" class="main_block">
-                                <span>инженерные  проекты</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" alt="Инженерные проекты">
-                            </a>
-                        </div>
+
                     </div>
                     <div class="row padding-lr">
                         <div class="col-lg-4 col-sm-4">
@@ -284,7 +108,8 @@
                             </a>
                         </div>
                     </div>
-                </section>
+                </section><!-- section -->
+
                 <div class="entry-footer parallax parallax-bg-28">
                     <div class="full-bg-image" style="background-position: center 224px;"></div>
                     <div class="overlay-paralax"></div>

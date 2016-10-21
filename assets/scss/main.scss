@@ -5857,12 +5857,16 @@ fieldset[disabled] .button {
                     background: #fff;
                     border-top: 1px solid grey;
                     li {
-                      a {
-                        font-size: 13px;
-                        &:hover {
+                      width: 100%;
+                      &:hover {
                         background-color: black;
                         color:#fff;
+                        a {
+                          color:#ffd200;
+                        }
                       }
+                      a {
+                        font-size: 13px;
                       }
                     }
                   }
@@ -5873,7 +5877,7 @@ fieldset[disabled] .button {
             }
             .menu-item {
               float: left;
-              margin-right: 3%;
+              margin-right: 5%;
               a {
                 font-family: 'MyriadPro';
                 font-size: 14px;
@@ -14506,5 +14510,10 @@ img.mfp-img {
 .port-imagesize {
   img {
     height: 469px;
+  }
+}
+.page {
+  #content-padding-off {
+    padding-top: 120px;
   }
 }
