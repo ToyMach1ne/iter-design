@@ -21,8 +21,8 @@
                             <p>E-mail: <a href="mailto:info@iter-design.com"><?php the_field('email' , 270); ?></a></p>
                             <p class="white-color">Время работы: <?php the_field('work_time' , 270); ?></p>
                             <div class="footer-social">
-                                <a href="https://www.instagram.com/iter_design/" target="_blank" class="footer-social-item footer-social-instagram"></a>
-                                <a href="http://www.houzz.ru/pro/mail8428/iter-design" target="_blank" class="footer-social-item footer-social-houzz"></a>
+                                <a href="https://www.instagram.com" target="_blank" class="footer-social-item footer-social-instagram"></a>
+                                <a href="http://www.houzz.ru" target="_blank" class="footer-social-item footer-social-houzz"></a>
                             </div>
                         </div>
                     </div>

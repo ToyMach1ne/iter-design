@@ -1,9 +1,13 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
+
         <!-- Owl Carousel -->
         <div id="owl-demo" class="owl-carousel owl-theme">
-          <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/img/fullimage1.jpg" alt="The Last of us"></div>
-          <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/img/fullimage2.jpg" alt="GTA V"></div>
-          <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/img/fullimage3.jpg" alt="Mirror Edge"></div>
+            <?php if( have_rows('header_slider', 270) ): while ( have_rows('header_slider', 270) ) : the_row();
+              // vars
+            $image = get_sub_field('slider_image'); ?>
+          <div class="item"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </div>
             <!-- End Of Owl Carousel -->
 
@@ -46,67 +50,19 @@
 
                 <section class="section" style="padding-top: 12px;">
                     <div class="row padding-lr">
-
+                    <?php $terms = get_field('taxonomy_list', 270); if( $terms ): ?>
+                   <?php foreach( $terms as $term_id ): ?>
+                   <?php $term = get_term( $term_id );?>
                         <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/architecture/" class="main_block">
-                                <span>архитектурные проекты</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="Архитектурные проекты"> </a>
+                            <a href="<?php echo get_term_link( $term ); ?>" class="main_block">
+                                <span><?php echo $term->name; ?></span>
+                                <?php $image = get_field('taxonomy_image', $term); if( !empty($image) ): ?>
+                                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <?php endif; ?>
+                              </a>
                         </div>
-
-                    </div>
-                    <div class="row padding-lr">
-                        <div class="col-lg-4 col-sm-4">
-                            <a class="main_block">
-                                <span>ландшафтные проекты</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/4.jpg" alt="Ландшафтные проекты">
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a class="main_block">
-                                <span>авторский надзор</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/5.jpg" alt="Авторский надзор"> </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a class="main_block">
-                                <span>технический надзор</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/6.jpg" alt="Технический надзор"> </a>
-                        </div>
-                    </div>
-                    <div class="row padding-lr">
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/decor/" class="main_block">
-                                <span>поставка  мебели и декора</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/7.jpg" alt="Поставка мебели и декора">
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/engineering/" class="main_block">
-                                <span>инженерное  оборудование</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/8.jpg" alt="Инженерное оборудование">
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/decor/" class="main_block">
-                                <span>отделочные материалы</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/9.jpg" alt="Отделочные материалы"> </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/complete_pm/" class="main_block">
-                                <span>управление проектами</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt="Управление проектами">
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/design-repair/" class="main_block">
-                                <span>ремонт квартир</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/10.jpg" alt="Ремонт квартир"> </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <a href="http://iter-design.com/construction/" class="main_block">
-                                <span>строительство домов</span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt="Строительство домов">
-                            </a>
-                        </div>
+                        <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
                 </section><!-- section -->
 
@@ -117,9 +73,9 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="offers">
-                                    <h1 class="shadow">Точное планирование проекта<br>
- современный дизайн<br>
- потрясающий результат</h1>
+                                    <h1 class="shadow">
+                                      Точное планирование проекта<br>современный дизайн<br>потрясающий результат
+                                    </h1>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +107,18 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="offers">
-                            <h1>ITER-Design <div class="slinks"><a href="http://iter-design.com/architecture/">Architecture</a> | <a href="http://iter-design.com/interior_design/">Interior</a> | <a href="http://iter-design.com/construction/">Construction</a> | <a href="http://iter-design.com/decor/">Decor</a></div></h1>
+                            <h1>ITER-Design
+                              <div class="slinks">
+                                <?php $term = get_term(32); ?>
+                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
+                                <?php $term = get_term(31); ?>
+                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
+                                <?php $term = get_term(33); ?>
+                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
+                                <?php $term = get_term(35); ?>
+                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a>
+                              </div>
+                            </h1>
                         </div>
                     </div>
                 </div>
