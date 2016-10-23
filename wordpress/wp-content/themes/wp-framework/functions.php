@@ -689,7 +689,7 @@ function post_type_projects() {
     'supports' => array('title','editor','thumbnail'),
     'rewrite' => array( 'slug' => 'projects' ),
     'show_in_rest' => true,
-    'supports' => 'excerpt'
+    'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 
   );
 

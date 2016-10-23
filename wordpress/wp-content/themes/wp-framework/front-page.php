@@ -18,11 +18,10 @@
                 <section id="folio" class="section padding-top-off page">
                     <section class="padding-bottom-off">
                         <section id="portfolio-items" class="portfolio-items col-5 back-black">
-                        <?php query_posts(array( 'post_type' => 'projects','showposts' => 15, 'order' => 'ASC' ) ); ?>
+                        <?php query_posts(array( 'post_type' => 'projects','showposts' => 15, 'order' => 'ASC') ); ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
                                 <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
-
                                       <?php the_post_thumbnail('normal'); ?>
                                       <a href="<?php the_permalink() ?>">
                                         <div class="image-extra">

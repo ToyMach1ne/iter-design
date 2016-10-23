@@ -31,7 +31,7 @@
                         <a class="button middle default popup-with-form" href="http://iter-design.com/#call-back"><i class="fa fa-2x fa-phone black"></i>  Заказать звонок</a>
                         <div class="white-popup-block mfp-hide" id="call-back">
                             <div class="c-form">
-                                <form action="http://iter-design.com/php/order/order.php" class="order-form" method="post" onsubmit="ga(&#39;send&#39;, &#39;event&#39;, &#39;callback&#39;, &#39;click&#39;); yaCounter34172550.reachGoal(&#39;CALLBACK&#39;); return true;">
+                                <form action="http://iter-design.com/php/order/order.php" class="order-form" method="post">
                                     <h1>Заказ звонка</h1>
                                     <fieldset style="border:0;">
                                         <div class="form-group form-group-select form-group-1">
@@ -257,6 +257,24 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.stickyNavbar.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#3d').magnificPopup({
+                items: [{
+                    src: '/images/page/interior_design/schema/3d-1.jpg'
+                }, {
+                    src: '/images/page/interior_design/schema/3d-2.jpg'
+                }, {
+                    src: '/images/page/interior_design/schema/3d-3.jpg'
+                }],
+                gallery: {
+                    enabled: true
+                },
+                type: 'image' // this is default type
+            });
+        });
+        </script>
 
      <?php wp_footer(); ?>
 </body>
