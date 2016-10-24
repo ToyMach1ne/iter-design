@@ -19,28 +19,25 @@
             <section id="folio" class="page">
                 <section class="section padding-off">
                     <div class="row">
-                        <section id="portfolio-items" class="portfolio-items col-5 small-font">
-                          <?php $terms = get_field('taxonomy_list', 270); if( $terms ): ?>
-                         <?php foreach( $terms as $term_id ): ?>
-                         <?php $term = get_term( $term_id );?>
-                            <article class="buildings port-img mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item port-imagesize lazy-image">
-                                    <div class="lazy"></div>
-                                    <?php $image = get_field('taxonomy_image', $term); if( !empty($image) ): ?>
-                                      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                    <?php endif; ?>
-                                    <a href="<?php echo get_term_link( $term ); ?>" class="main_block">
-                                        <div class="image-extra">
-                                            <div class="extra-content">
-                                                <h2 class="extra-title"><?php echo $term->name; ?></h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                        <?php endforeach; ?>
-                        <?php endif; ?>
-                        </section>
+
+                        <section class="section" style="padding-top: 12px;">
+                  <div class="row padding-lr">
+                  <?php $terms = get_field('taxonomy_list', 270); if( $terms ): ?>
+                    <?php foreach( $terms as $term_id ): ?>
+                      <?php $term = get_term( $term_id ); ?>
+                        <div class="col-lg-4 col-sm-4">
+                          <a href="<?php echo get_term_link( $term ); ?>" class="main_block">
+                            <span><?php echo $term->name; ?></span>
+                            <?php $image = get_field('taxonomy_image', $term); if( !empty($image) ): ?>
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <?php endif; ?>
+                          </a>
+                        </div>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
+                  </div>
+                </section><!-- section -->
+
                     </div>
                 </section>
             </section>
