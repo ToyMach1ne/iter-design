@@ -1,9 +1,9 @@
 <?php
-define('DB_NAME', 'p284179_saitde3');
-define('DB_USER', 'p284179_saitde3');
-define('DB_PASSWORD', 'x7p3Rpq4qy');
+define('DB_NAME', 'iter-design');
+define('DB_USER', 'iter-design');
+define('DB_PASSWORD', 'iter-design');
 
-define('DB_HOST', 'p284179.mysql.ihc.ru');
+define('DB_HOST', 'localhost');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
@@ -17,7 +17,7 @@ define('DB_COLLATE', '');
 $table_prefix  = 'bunnr_';
 
 define('WPLANG', 'ru_RU');
-//define('DISALLOW_FILE_EDIT', true);
+define('DISALLOW_FILE_EDIT', true);
 define('WP_DEBUG', false);
 
 define('AUTH_KEY',         'B]9_9_%uF{fdsasgC)pMx/?-+_bVjX;Xrib=1y23rgghdh3a+dadAEIZ1O/z^2Gv`<GLr<7hKI');
