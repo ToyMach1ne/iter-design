@@ -20,8 +20,8 @@
                         <section id="portfolio-items" class="portfolio-items col-5 back-black">
                         <?php query_posts(array( 'post_type' => 'projects','showposts' => 15, 'order' => 'ASC') ); ?>
                         <?php while (have_posts()) : the_post(); ?>
-                            <article class="architecture mix mix_all" style="display: inline-block;  opacity: 1;">
-                                <div class="work-item-move slideUp3xRun" style="height: 198.529px;">
+                            <article class="architecture mix mix_all">
+                                <div class="work-item-move slideUp3xRun">
                                       <?php the_post_thumbnail('normal'); ?>
                                       <a href="<?php the_permalink() ?>">
                                         <div class="image-extra">
@@ -48,21 +48,21 @@
                 </div>
 
                 <section class="section" style="padding-top: 12px;">
-                    <div class="row padding-lr">
-                    <?php $terms = get_field('taxonomy_list', 270); if( $terms ): ?>
-                   <?php foreach( $terms as $term_id ): ?>
-                   <?php $term = get_term( $term_id );?>
+                  <div class="row padding-lr">
+                  <?php $terms = get_field('taxonomy_list', 270); if( $terms ): ?>
+                    <?php foreach( $terms as $term_id ): ?>
+                      <?php $term = get_term( $term_id ); ?>
                         <div class="col-lg-4 col-sm-4">
-                            <a href="<?php echo get_term_link( $term ); ?>" class="main_block">
-                                <span><?php echo $term->name; ?></span>
-                                <?php $image = get_field('taxonomy_image', $term); if( !empty($image) ): ?>
-                                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                <?php endif; ?>
-                              </a>
+                          <a href="<?php echo get_term_link( $term ); ?>" class="main_block">
+                            <span><?php echo $term->name; ?></span>
+                            <?php $image = get_field('taxonomy_image', $term); if( !empty($image) ): ?>
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <?php endif; ?>
+                          </a>
                         </div>
-                        <?php endforeach; ?>
-                        <?php endif; ?>
-                    </div>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
+                  </div>
                 </section><!-- section -->
 
                 <div class="entry-footer parallax parallax-bg-28">
@@ -108,14 +108,14 @@
                         <div class="offers">
                             <h1>ITER-Design
                               <div class="slinks">
-                                <?php $term = get_term(32); ?>
-                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
-                                <?php $term = get_term(31); ?>
-                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
-                                <?php $term = get_term(33); ?>
-                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a> |
-                                <?php $term = get_term(35); ?>
-                                <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a>
+                                <?php $zibrov = get_term(32); ?>
+                                <a href="<?php echo get_term_link( $zibrov ); ?>"><?php echo $zibrov->name; ?></a> |
+                                <?php $zibrov = get_term(31); ?>
+                                <a href="<?php echo get_term_link( $zibrov ); ?>"><?php echo $zibrov->name; ?></a> |
+                                <?php $zibrov = get_term(33); ?>
+                                <a href="<?php echo get_term_link( $zibrov ); ?>"><?php echo $zibrov->name; ?></a> |
+                                <?php $zibrov = get_term(34); ?>
+                                <a href="<?php echo get_term_link( $zibrov ); ?>"><?php echo $zibrov->name; ?></a>
                               </div>
                             </h1>
                         </div>
