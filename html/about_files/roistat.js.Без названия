@@ -1,0 +1,1 @@
+!function(){var t=500,e=5,i=0,n=setInterval(function(){var t=allokaGetCookie("roistat_visit");if(t){for(var o in _alloka.objects)allokaAddEvent(window,"load",allokaSendCustomData(o,{roistat_visit:t}));return clearInterval(n)}return++i==e?clearInterval(n):void 0},t)}();

@@ -1,0 +1,184 @@
+.tb-default {background-size:cover; min-width:1170px; height:590px; margin-bottom:60px;}
+
+/* здесь меняем картинку-баннер на лендинг странице */
+
+.template-banner {
+    background-image: url("/wp-content/uploads/header.jpg"); 
+}
+
+.template-banner-restoran {
+    background-image: url("/wp-content/uploads/glavnay-restoran.jpg"); 
+}
+.template-banner-hotel {
+    background-image: url("/wp-content/uploads/design-hotel.jpg"); 
+}
+
+.template-banner-beauty-salon {
+    background-image: url("/wp-content/uploads/design-beauty-salon.jpg"); 
+}
+
+.template-banner-apteka {
+    background-image: url("/wp-content/uploads/design-apteka.jpg"); 
+}
+
+.template-banner-butika {
+    background-image: url("/wp-content/uploads/design-butika5.jpg"); 
+}
+
+.template-banner-ostrovok {
+    background-image: url("/wp-content/uploads/design-ostrovok1.jpg");
+}
+
+.template-banner-bank {
+    background-image: url("/wp-content/uploads/design-bank-2.jpg");
+}
+.template-banner-bar {
+    background-image: url("/wp-content/uploads/glavny-bar5.jpg");
+}
+.template-banner-cafe {
+    background-image: url("/wp-content/uploads/design-cafe3.jpg");
+}
+.template-banner-dacha {
+    background-image: url("/wp-content/uploads/design-dacha4.jpg");
+}
+.template-banner-klinika {
+    background-image: url("/wp-content/uploads/design-klinika5.jpg");
+}
+.template-banner-magazin {
+    background-image: url("/wp-content/uploads/design-magazin1.jpg");
+}
+.template-banner-1-komnata {
+    background-image: url("/wp-content/uploads/design-1-komnata.jpg"); 
+}
+.template-banner-club {
+    background-image: url("/wp-content/uploads/design-club.jpg"); 
+}
+.template-banner-fitness {
+    background-image: url("/wp-content/uploads/design-fitness.jpg"); 
+}
+.template-banner-hostel {
+    background-image: url("/wp-content/uploads/design-hostel.jpg"); 
+}
+.template-banner-little-kvartire {
+    background-image: url("/wp-content/uploads/design-little-kvartire.jpg"); 
+}
+.template-banner-no-big-kvartira {
+    background-image: url("/wp-content/uploads/nebolychay.jpg"); 
+}
+.template-banner-offis{
+    background-image: url("/wp-content/uploads/design-offis.jpg"); 
+}
+.template-banner-otel{
+    background-image: url("/wp-content/uploads/design-otel.jpg"); 
+}
+.template-banner-parihmaherskaya{
+    background-image: url("/wp-content/uploads/design-parikmacher.jpg"); 
+}
+.template-banner-studio{
+    background-image: url("/wp-content/uploads/design-studio1.jpg"); 
+}
+.template-banner-2-kvartire {
+    background-image: url("/wp-content/uploads/glavny-2komnat.jpg");
+}
+.template-banner-kope {
+    background-image: url("/wp-content/uploads/design-kope.jpg");
+}
+.template-banner-hruchevka {
+    background-image: url("/wp-content/uploads/design-hruchevka.jpg");
+}
+.template-banner-dom {
+    background-image: url("/wp-content/uploads/glavnay-interier-doma.jpg");
+}
+.template-banner-3-kvartire {
+    background-image: url("/wp-content/uploads/design-3-kvartire.jpg");
+}
+.template-banner-4-kvartire {
+    background-image: url("/wp-content/uploads/design-4-kvartire.jpg");
+}
+.template-banner-brejnev {
+    background-image: url("/wp-content/uploads/design-brejnev.jpg");
+}
+.template-banner-stalinka {
+    background-image: url("/wp-content/uploads/design-stalinka.jpg");
+}
+.template-banner-panelnye {
+    background-image: url("/wp-content/uploads/design-panelnye.jpg");
+}
+.template-banner-little-gabarit {
+    background-image: url("/wp-content/uploads/design-little-gabarit.jpg");
+}
+.template-banner-p-3m{
+    background-image: url("/wp-content/uploads/design-p-3m.jpg");
+}
+.template-banner-ip-46s {
+    background-image: url("/wp-content/uploads/glavnay-ip46-s.jpg");
+}
+.template-banner-kope-m-parus {
+    background-image: url("/wp-content/uploads/glavnay-kope-m-parus.jpg");
+}
+.template-banner-kvartire-155 {
+    background-image: url("/wp-content/uploads/glavny-2komnat.jpg");
+} 
+.template-banner-kvartire-p-111m { 
+    background-image: url("/wp-content/uploads/design-kvartire-p-111m3.jpg");
+}
+.template-banner-p44-t { 
+    background-image: url("/wp-content/uploads/design-p44-t2.jpg");
+}
+.template-banner-p-46 { 
+    background-image: url("/wp-content/uploads/design-p-461.jpg");
+}
+.template-banner-premium { 
+    background-image: url("/wp-content/uploads/design-premium2.jpg");
+}
+.template-banner-p-44 { 
+    background-image: url("/wp-content/uploads/design-p-442.jpg");
+} 
+.template-banner-121-seria {
+    background-image: url("/wp-content/uploads/design-121-seria1.jpg "); 
+}
+.template-banner-cottedj {
+    background-image: url("/wp-content/uploads/design-cottedj.jpg"); 
+}
+.template-banner-dypleks {
+    background-image: url("/wp-content/uploads/design-dypleks.jpg"); 
+}
+.template-banner-elitnie {
+    background-image: url("/wp-content/uploads/design-elitnie.jpg"); 
+}
+.template-banner-exlusive {
+    background-image: url("/wp-content/uploads/design-exlusive.jpg"); 
+}
+.template-banner-ii49 {
+    background-image: url("/wp-content/uploads/design-ii49.jpg"); 
+}
+.template-banner-malogabarit-kvartira {
+    background-image: url("/wp-content/uploads/design-malogabarit-kvartira.jpg "); 
+}
+.template-banner-obshestven-pomesheniy {
+    background-image: url("/wp-content/uploads/design-obshestven-pomesheniy.jpg"); 
+}
+.template-banner-penthouse {
+    background-image: url("/wp-content/uploads/penthouse.jpg"); 
+}
+.template-banner-raspashonka {
+    background-image: url("/wp-content/uploads/design-raspashonka.jpg"); 
+}
+.template-banner-villa {
+    background-image: url("/wp-content/uploads/design-villa.jpg"); 
+}
+.template-banner-vip {
+    background-image: url("/wp-content/uploads/design-vip.jpg"); 
+}
+.template-banner-taynhouse {
+    background-image: url("/wp-content/uploads/glavnay-taunhouse.jpg"); 
+}
+.template-banner-tipovye {
+    background-image: url("/wp-content/uploads/tipovay.jpg"); 
+}
+.template-banner-spa {
+    background-image: url("/wp-content/uploads/design-spa3.jpg"); 
+}
+.template-banner-detskay {
+    background-image: url("/wp-content/uploads/design-detskay.jpg"); 
+}

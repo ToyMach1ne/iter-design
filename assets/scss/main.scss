@@ -15115,3 +15115,40 @@ img.mfp-img {
     background-color: #1b1d1f;
   }
 }
+.page {
+  .content-shadow {
+    padding-top: 150px;
+  }
+}
+.staff-block {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: baseline;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .staff-item {
+      float: left;
+    margin: 0 0 5rem;
+    width: 238px;
+    height: 330px;
+    text-align: center;
+    -webkit-flex: 1 1 21%;
+    -moz-flex: 1 1 21%;
+    -ms-flex: 1 1 21%;
+    flex: 1 1 21%;
+    -webkit-transition: all 600ms linear;
+    -moz-transition: all 600ms linear;
+    -o-transition: all 600ms linear;
+    -ms-transition: all 600ms linear;
+    transition: all 600ms linear;
+    }
+}

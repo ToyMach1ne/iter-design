@@ -1,0 +1,49 @@
+jQuery(document).ready(function() {
+	jQuery('.range-wrap input[type="radio"]').change(function (){
+		jQuery(this).closest('.range-wrap').find('.radio-input').find('label').removeClass('checked');
+			jQuery(this).closest('label').addClass('checked');
+	});
+	jQuery(".post-like a").click(function(){
+	
+		heart = jQuery(this);
+	
+		post_id = heart.data("post_id");
+		
+		jQuery.ajax({
+			type: "post",
+			url: ajax_var.url,
+			data: "action=post-like&nonce="+ajax_var.nonce+"&post_like=&post_id="+post_id,
+			success: function(count){
+				if(count != "already")
+				{
+					heart.addClass("voted");
+					heart.siblings(".count").text(count);
+				}
+			}
+		});
+		
+		return false;
+	})
+	jQuery("#post-like").submit(function(e){
+		e.preventDefault();
+
+		heart = jQuery(this);
+	
+		post_id = heart.data("post_id");
+		console.log("action=post-like&nonce="+ajax_var.nonce+"&post_like=&post_id="+post_id+"&"+heart.serialize());
+		jQuery.ajax({
+			type: "post",
+			url: ajax_var.url,
+			data: "action=post-like&nonce="+ajax_var.nonce+"&post_like=&post_id="+post_id+"&"+heart.serialize(),
+			success: function(count){
+				if(count != "already")
+				{
+					heart.addClass("voted");
+					heart.closest(".range-wrap").find(".count").text(count);
+					heart.find('input[type="submit"]').val('Ваш голос учтен!').attr('disabled', true);
+					heart.find('input[type="radio"]').attr('disabled', true);
+				}
+			}
+		});
+	})
+})

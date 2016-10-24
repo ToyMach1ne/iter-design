@@ -1,7 +1,7 @@
 /* if work with html set TRUE, else - FALSE */
 var htmlOWp = false,
   // set wordpress template folder
-  wpThemeName = 'wp-framework',
+  wpThemeName = 'wp-iter',
   // and set wordpress domain
   wpDomain = 'iter-design.dev';
 

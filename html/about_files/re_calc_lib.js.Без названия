@@ -1,0 +1,142 @@
+var type_estate = 1;
+  var priceval = 0;
+  var startval = sum;
+  $("p.re_result span").html(sum);
+  
+function getFromRangeTest(sum, type_estate) {
+  var result = 0;
+  if (type_estate == 1) {
+      result = $.grep(PRIVATE_ESTATE_RANGE2, function(v) {
+          if (sum >= v.range1 && sum <= v.range2)
+              return v;
+      });
+  } else if(type_estate == 2) {
+      result = $.grep(COMMERCE_ESTATE_RANGE2, function(v) {
+          if (sum >= v.range1 && sum <= v.range2)
+              return v;
+      });   
+  }
+  return result;
+}  
+function reCalcSetPriceTest(square_val, type_estate) {
+    //console.log(square_val);
+      coef = square_val.toString();
+      var estate = null;
+      if (type_estate == 1) {
+          estate = PRIVATE_ESTATE2;
+      }
+      else if(type_estate == 2) {
+          estate = COMMERCE_ESTATE2;
+      }
+      if(estate!=null) {
+          var final_sum = $.grep(estate, function(e){ return e.square == square_val; });
+          //console.log(final_sum.length);
+          if (final_sum.length == 0) {
+              //console.log('Нет такого значения');
+               final_sum = getFromRangeTest(square_val, type_estate); 
+               //alert(final_sum);
+               if(final_sum[0]['coef']==0)
+                  final_sum = final_sum[0]['sum'];
+               else
+                  final_sum = final_sum[0]['coef']*square_val;
+          }
+          else {
+              if(final_sum[0]['coef']==0)
+                  final_sum = final_sum[0]['sum'];
+              else
+                  final_sum = final_sum[0]['coef']*square_val;
+          }
+          
+          //return final_sum;
+          final_sum = final_sum.toString();
+          $("p.re_calc_total_sum span").html(final_sum.replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g, "\$1 "));
+    }                   
+  }
+  
+  priceval = reCalcSetPriceTest(sum, type_estate);
+  $("p.re_result span").html(priceval);
+   
+  function getMaxOrMinPe(typeFinder) {
+	  if(typeFinder=='max') {
+		  var maxPosition = Object.keys(PRIVATE_ESTATE2).length;
+		  var maxValue = Object.keys(PRIVATE_ESTATE2)[maxPosition-1];
+		  var res = maxValue.match(/\d+/g);
+		  var result = $.grep(PRIVATE_ESTATE_RANGE2, function(v) {
+              if (res < v.range2)
+                  res = v.range2;
+          });
+		}
+		else if(typeFinder=='min') {
+		  var maxPosition = Object.keys(PRIVATE_ESTATE2).length;
+		  var maxValue = Object.keys(PRIVATE_ESTATE2)[maxPosition-1];
+		  var res = maxValue.match(/\d+/g);
+		  var result = $.grep(PRIVATE_ESTATE_RANGE2, function(v) {
+              if (res > v.range1) {
+                  res = v.range1;
+                  
+              }
+          });
+		}
+	  return res;
+  }
+  function getMaxOrMinCe(typeFinder) {
+	  if(typeFinder=='max') {
+		  var maxPosition = COMMERCE_ESTATE2.length;
+		  var maxValue = COMMERCE_ESTATE2[maxPosition-1].square;//Object.keys(COMMERCE_ESTATE2)[maxPosition-1];
+                  //console.log(maxValue)
+		  var res = maxValue;//.match(/\d+/g);
+		  var result = $.grep(COMMERCE_ESTATE_RANGE2, function(v) {
+              if (res < v.range2)
+                  res = v.range2;
+              //console.log(res);
+          });
+		}
+		else if(typeFinder=='min') {
+		  var maxPosition = Object.keys(COMMERCE_ESTATE2).length;
+		  var maxValue = COMMERCE_ESTATE2[0].square;
+                  //console.log(maxValue);
+		  var res = maxValue;//.match(/\d+/g);
+		  var result = $.grep(COMMERCE_ESTATE_RANGE2, function(v) {
+              if (res > v.range1) {
+                  res = v.range1;
+                  
+              }
+          });
+		}
+	  return res;
+  }
+  
+  $(function() {
+      var $slide = $("#re_slider").slider({
+          animate: true,
+          range: "min",
+          min: parseInt(getMaxOrMinPe('min')),
+          max: parseInt(getMaxOrMinPe('max')),
+          values: 0,
+          step: 10,
+          value: startval,
+          change: function() {
+              var value = $("#re_slider").slider("option", "value");
+              $("p.re_result span").html(value);
+              reCalcSetPriceTest(value, type_estate);
+          },
+          slide: function() {
+              var value = $("#re_slider").slider("option", "value");
+              $("p.re_result span").html(value);
+              reCalcSetPriceTest(value, type_estate);
+          }
+      });
+      $("input[name='re_calc_type']").change(function() {
+          if ($(this).val() == 1) {
+              type_estate = 1;
+              $slide.slider("option", "min", parseInt(getMaxOrMinPe('min'))); // left handle should be at the left end, but it doesn't move
+              $slide.slider("option", "max", parseInt(getMaxOrMinPe('max')));
+              $slide.slider("value",$slide.slider("value"));
+          } else {
+              type_estate = 2;
+              $slide.slider("option", "min", parseInt(getMaxOrMinCe('min'))); // left handle should be at the left end, but it doesn't move
+              $slide.slider("option", "max", parseInt(getMaxOrMinCe('max')));
+              $slide.slider("value", $slide.slider("value"));//$slide.slider("value")
+          }
+      });
+  });
